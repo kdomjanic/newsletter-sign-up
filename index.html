@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="main">
             <div class="illustration">
                 <picture>
                     <source srcset="images/illustration-sign-up-desktop.svg" media="(min-width: 800px)">
@@ -33,9 +33,21 @@
                         <label id="email-warning" hidden>Valid email required</label>
                     </div>
                     <input type="email" id="emailInput" name="emailInput" placeholder="email@company.com" required>
-                    <button type="submit" onclick="subscribeToNewsletter()" >Subscribe to monthly newsletter</button>
+                    <button type="submit" id=subscribeToNewsletter >Subscribe to monthly newsletter</button>
                 </form>
             </div>
+    </div>
+    <div class="modal hidden" id="modal">
+        <div class="message">
+            <img src="images/icon-success.svg" alt="Success icon">
+            <h1>Thanks for subscribing!</h1>
+            <p>
+                A confirmation email has been sent to
+                <span style="font-weight: bold; color: var(--dark-slate-grey)" id="userMail"></span>.
+                Pleas open it and click the button inside to confirm your subscription
+            </p>
+        </div>
+        <button type="submit" id="dismissButton">Dismiss message</button>
     </div>
 <script src="script.js"></script>
 
