@@ -216,6 +216,11 @@ button:hover {
     padding: 8rem 1.5rem 1.5rem 1.5rem;
 }
 
+.user-mail {
+    font-weight: bold;
+    color: var(--dark-slate-grey)
+}
+
 .message {
     display: flex;
     flex-direction: column;
