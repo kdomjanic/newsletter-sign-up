@@ -1,4 +1,3 @@
-// const modal = document.querySelector('#modal')
 const main = document.getElementById('main')
 const modal = document.getElementById('modal')
 
